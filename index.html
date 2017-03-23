@@ -1,0 +1,779 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Auto-hiding fixed navbar for Bootstrap</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Slabo+27px" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="trials.css">
+    <link rel="stylesheet" type="text/css" href="out.css">
+    <link rel="stylesheet" type="text/css" href="carousel.css">
+    <link href="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .demo-long {
+            margin-top: 100px;
+            margin-bottom: 200px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="my-nav">
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+            <div class="navbar2">
+                <div class="container"> <span class="icons">
+                  <i class="fa fa-twitter" aria-hidden="true"></i>
+                  <i class="fa fa-instagram" aria-hidden="true"></i>
+                  <i class="fa fa-facebook" aria-hidden="true"></i>
+                  </span> 613-800-8135<span class="pull-right">
+                  <a class="creds"> create account</a> /
+                  <a class="creds"> log in</a>
+                  </span> </div>
+            </div>
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+                    <a class="navbar-brand" href="#"><img class="logo" src="images/logo2.png" alt="logo"> </a>
+                </div>
+                <div class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav pull-right">
+                        <li><a href="#">Men</a></li>
+                        <li><a href="#about">women</a></li>
+                        <li><a href="#contact">deals</a></li>
+                        <li><a href="#contact">sale</a></li>
+                        <li class="dropdown">
+                            <!--                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown</a>-->
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Action</a></li>
+                                <li><a href="#">Another action</a></li>
+                                <li><a href="#">Something else here</a></li>
+                                <li class="divider"></li>
+                                <li class="dropdown-header">Nav header</li>
+                                <li><a href="#">Separated link</a></li>
+                                <li><a href="#">One more separated link</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="topbg">
+        <div class="container-fluid">
+            <div class="col-md-5" style="padding-left:40px;">
+                <h1 style="font-weight:bold;text-transform:uppercase;letter-spacing:2px;text-shadow:2px 2px #ff406d;">Spring is here! </h1>
+                <h3 style="font-weight:;text-transform:uppercase;letter-spacing:2px;margin-top:-10px;text-shadow:1px 1px #40ff91;">Hop into the new season in style with our brand new collection! </h3> <a class="rainbowbutton">Shop Spring apparel</a> </div>
+        </div>
+    </div>
+    <section class="maincntnt">
+        <div class="container"> <span class="boxlabel2"> Men: Top Categories</span>
+            <p class="separator"></p>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="catoverflow">
+                        <div class="box"> <img src="http://www.sneakersnstuff.com/en/images/160913/large.jpg">
+                            <div class="overbox">
+                                <center>
+                                    <div class="title overtext"> <a class="productbutton">browse shoes</a> </div>
+                                </center>
+                            </div>
+                        </div>
+                    </div> &nbsp;<span class="boxlabel">Shoes</span> </div>
+                <div class="col-md-4">
+                    <div class="catoverflow">
+                        <div class="box"> <img src="http://insidethesneakerbox.com/wp-content/uploads/2015/02/Mark-McNairy-x-Oliberte-Spring-2015-2-of-13.jpg">
+                            <div class="overbox secondbox">
+                                <center>
+                                    <div class="title overtext"> <a class="productbutton">browse boots</a> </div>
+                                </center>
+                            </div>
+                        </div>
+                    </div> &nbsp;<span class="boxlabel">Boots</span> </div>
+                <div class="col-md-4">
+                    <div class="catoverflow">
+                        <div class="box"> <img src="http://images.asos-media.com/products/esprit-backpack/7414899-3?wid=332">
+                            <div class="overbox thirdbox">
+                                <center>
+                                    <div class="title overtext"> <a class="productbutton">browse bags</a> </div>
+                                </center>
+                            </div>
+                        </div>
+                    </div> &nbsp;<span class="boxlabel">bags</span> </div>
+            </div>
+            <br>
+            <br>
+            <br><span class="boxlabel2"> Women: Top Categories</span>
+            <p class="separator"></p>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="catoverflow">
+                        <div class="box"> <img src="http://www.sneakersnstuff.com/en/images/164985/large.jpg">
+                            <div class="overbox fourthbox">
+                                <center>
+                                    <div class="title overtext"> <a class="productbutton">browse sandals</a> </div>
+                                </center>
+                            </div>
+                        </div>
+                    </div> &nbsp;<span class="boxlabel">sandals</span> </div>
+                <div class="col-md-4">
+                    <div class="catoverflow">
+                        <div class="box"> <img src="http://www.sneakersnstuff.com/en/images/157792/large.jpg">
+                            <div class="overbox fifthbox">
+                                <center>
+                                    <div class="title overtext"> <a class="productbutton">browse shorts</a> </div>
+                                </center>
+                            </div>
+                        </div>
+                    </div> &nbsp;<span class="boxlabel">Shorts</span> </div>
+                <div class="col-md-4">
+                    <div class="catoverflow">
+                        <div class="box"> <img src="http://images.asos-media.com/products/asos-round-sunglasses-in-pale-green-coloured-lens/7426601-3?wid=332">
+                            <div class="overbox sixthbox">
+                                <center>
+                                    <div class="title overtext"> <a class="productbutton">browse sunglasses</a> </div>
+                                </center>
+                            </div>
+                        </div>
+                    </div> &nbsp;<span class="boxlabel">sunglasses</span> </div>
+            </div>
+            <br>
+            <br>
+            <!-- account modal -->
+            <div class="modal fade useraccount" id="exampleModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content" style="padding-right:0 !important;">
+                        <div class="titlebg"> log in </div>
+                        <div class="mainmocn"> <span class="boxlabel">Name</span>
+                            <br>
+                            <input class="signupform" type="text" placeholder="" />
+                            <br>
+                            <br> <span class="boxlabel">Password</span>
+                            <br>
+                            <input class="signupform" type="password" placeholder="" />
+                            <center> <a class="formbutton">Log in</a>
+                                <br> <a class="modallinks">Forgot Password?</a>
+                                <br>
+                                <br>
+                                <br> <a class="modallinks2">create account</a> </center>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- account modal ends -->
+            <!-- account modal -->
+            <div class="modal fade userproduct" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="row">
+                            <div class="col-md-6"> <img src="images/popup/1.jpeg"> </div>
+                            <div class="col-md-6">
+                                <h2>Reclaimed Vintage Inspired Skinny Floral Trousers</h2>
+                                <h3>$22</h3>
+                                <p class="separator"></p>
+                                <br>
+                                <div class="container">
+                                    <select class="cs-select">
+                                        <option value="" disabled="disabled" selected="selected">Select A Size</option>
+                                        <option value="email">Small</option>
+                                        <option value="twitter">Medium</option>
+                                        <option value="linkedin">Large</option>
+                                        <option value="linkedin">Extra Large (+ $4.00)</option>
+                                    </select>
+                                </div>
+                                <br>
+                                <br> <a class="modallinks2">add to cart <i class="fa fa-shopping-cart" aria-hidden="true"></i></a> </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- account modal ends -->
+            <!-- modal 3 -->
+            <div class="modal fade userproduct" id="exampleModal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="row">
+                            <div class="col-md-6"> <img src="images/popup/2.jpeg"> </div>
+                            <div class="col-md-6">
+                                <h2>Djinns Moc Lau Hump Trainers In Pink</h2>
+                                <h3>$88</h3>
+                                <p class="separator"></p>
+                                <br>
+                                <div class="container">
+                                    <select class="cs-select">
+                                        <option value="" disabled="disabled" selected="selected">Select A Size</option>
+                                        <option value="email">7</option>
+                                        <option value="twitter">8</option>
+                                        <option value="linkedin">9</option>
+                                        <option value="linkedin">10</option>
+                                    </select>
+                                </div>
+                                <br>
+                                <br> <a class="modallinks2">add to cart <i class="fa fa-shopping-cart" aria-hidden="true"></i></a> </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- modal ends -->
+            <!-- modal -->
+            <div class="modal fade userproduct" id="exampleModal4" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="row">
+                            <div class="col-md-6"> <img src="images/popup/4.jpeg"> </div>
+                            <div class="col-md-6">
+                                <h2>Roll Top Backpack In Colour Block</h2>
+                                <h3>$24</h3>
+                                <p class="separator"></p>
+                                <br>
+                                <div class="container">
+                                    <select class="cs-select">
+                                        <option value="" disabled="disabled" selected="selected">Comes In One Size</option>
+                                        <!--                                        <option value="email">7</option>-->
+                                        <!--                                        <option value="twitter">8</option>-->
+                                        <!--                                        <option value="linkedin">9</option>-->
+                                        <!--                                        <option value="linkedin">10</option>-->
+                                    </select>
+                                </div>
+                                <br>
+                                <br> <a class="modallinks2">add to cart <i class="fa fa-shopping-cart" aria-hidden="true"></i></a> </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- modal end -->
+            <!-- modal  -->
+            <!-- modal 3 end -->
+            <!-- modal 4 -->
+            <div class="modal fade userproduct" id="exampleModal5" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="row">
+                            <div class="col-md-6"> <img src="images/popup/5.jpeg"> </div>
+                            <div class="col-md-6">
+                                <h2>Vans Sk8-Hi Trainers</h2>
+                                <h3>$79</h3>
+                                <p class="separator"></p>
+                                <br>
+                                <div class="container">
+                                    <select class="cs-select">
+                                        <option value="" disabled="disabled" selected="selected">Select A Size</option>
+                                        <option value="email">7</option>
+                                        <option value="twitter">8</option>
+                                        <option value="linkedin">9</option>
+                                        <option value="linkedin">10</option>
+                                    </select>
+                                </div>
+                                <br>
+                                <br> <a class="modallinks2">add to cart <i class="fa fa-shopping-cart" aria-hidden="true"></i></a> </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade userproduct" id="exampleModal3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="row">
+                            <div class="col-md-6"> <img src="images/popup/3.jpeg"> </div>
+                            <div class="col-md-6">
+                                <h2>Oversized Wrap Blouse In Dark Rose Print</h2>
+                                <h3>$29</h3>
+                                <p class="separator"></p>
+                                <br>
+                                <div class="container">
+                                    <select class="cs-select">
+                                        <option value="" disabled="disabled" selected="selected">Select A Size</option>
+                                        <option value="email">Small</option>
+                                        <option value="twitter">Medium</option>
+                                        <option value="linkedin">Large</option>
+                                        <option value="linkedin">Extra Large (+ $4.00)</option>
+                                    </select>
+                                </div>
+                                <br>
+                                <br> <a class="modallinks2">add to cart <i class="fa fa-shopping-cart" aria-hidden="true"></i></a> </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- modal -->
+            <div class="modal fade userproduct" id="exampleModal6" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="row">
+                            <div class="col-md-6"> <img src="images/popup/6.jpeg"> </div>
+                            <div class="col-md-6">
+                                <h2>Monki Dotty Top</h2>
+                                <h3>$12</h3>
+                                <p class="separator"></p>
+                                <br>
+                                <div class="container">
+                                    <select class="cs-select">
+                                        <option value="" disabled="disabled" selected="selected">Select A Size</option>
+                                        <option value="email">Small</option>
+                                        <option value="twitter">Medium</option>
+                                        <option value="linkedin">Large</option>
+                                        <option value="linkedin">Extra Large (+ $4.00)</option>
+                                    </select>
+                                </div>
+                                <br>
+                                <br> <a class="modallinks2">add to cart <i class="fa fa-shopping-cart" aria-hidden="true"></i></a> </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- endmodal -->
+            <!-- modal -->
+            <div class="modal fade userproduct" id="exampleModal7" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="row">
+                            <div class="col-md-6"> <img src="images/popup/7.jpeg"> </div>
+                            <div class="col-md-6">
+                                <h2> Stretch Slim Ankle Grazer Jeans In Light Wash</h2>
+                                <h3>$20</h3>
+                                <p class="separator"></p>
+                                <br>
+                                <div class="container">
+                                    <select class="cs-select">
+                                        <option value="" disabled="disabled" selected="selected">Select A Size</option>
+                                        <option value="email">28</option>
+                                        <option value="twitter">29</option>
+                                        <option value="linkedin">30</option>
+                                        <option value="linkedin">31</option>
+                                    </select>
+                                </div>
+                                <br>
+                                <br> <a class="modallinks2">add to cart <i class="fa fa-shopping-cart" aria-hidden="true"></i></a> </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- endmodal -->
+            <!-- modal -->
+            <div class="modal fade userproduct" id="exampleModal8" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="row">
+                            <div class="col-md-6"> <img src="images/popup/8.jpeg"> </div>
+                            <div class="col-md-6">
+                                <h2>Super Oversized T-Shirt With Roll Sleeve And Bright Tie Dye Wash</h2>
+                                <h3>$18</h3>
+                                <p class="separator"></p>
+                                <br>
+                                <div class="container">
+                                    <select class="cs-select">
+                                        <option value="" disabled="disabled" selected="selected">Select A Size</option>
+                                        <option value="email">Small</option>
+                                        <option value="twitter">Medium</option>
+                                        <option value="linkedin">Large</option>
+                                        <option value="linkedin">Extra Large (+ $4.00)</option>
+                                    </select>
+                                </div>
+                                <br>
+                                <br> <a class="modallinks2">add to cart <i class="fa fa-shopping-cart" aria-hidden="true"></i></a> </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- endmodal -->
+            <!-- modal -->
+            <div class="modal fade userproduct" id="exampleModal9" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="row">
+                            <div class="col-md-6"> <img src="images/popup/9.jpeg"> </div>
+                            <div class="col-md-6">
+                                <h2>Retro Sunglasses In Matt Tort And Gold</h2>
+                                <h3>$50</h3>
+                                <p class="separator"></p>
+                                <br>
+                                <div class="container">
+                                    <select class="cs-select">
+                                        <option value="" disabled="disabled" selected="selected">Comes In One Size</option>
+                                        <!--                            <option value="email">Small</option>-->
+                                        <!--                            <option value="twitter">Medium</option>-->
+                                        <!--                            <option value="linkedin">Large</option>-->
+                                        <!--                            <option value="linkedin">Extra Large (+ $4.00)</option>-->
+                                    </select>
+                                </div>
+                                <br>
+                                <br> <a class="modallinks2">add to cart <i class="fa fa-shopping-cart" aria-hidden="true"></i></a> </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- endmodal -->
+            <!-- modal -->
+            <div class="modal fade userproduct" id="exampleModal10" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="row">
+                            <div class="col-md-6"> <img src="images/popup/10.jpeg"> </div>
+                            <div class="col-md-6">
+                                <h2>Originals NMD_XR1 PK Trainers In Black </h2>
+                                <h3>$119</h3>
+                                <p class="separator"></p>
+                                <br>
+                                <div class="container">
+                                    <select class="cs-select">
+                                        <option value="" disabled="disabled" selected="selected">Select A Size</option>
+                                        <option value="email">8</option>
+                                        <option value="twitter">9</option>
+                                        <option value="linkedin">10</option>
+                                        <option value="linkedin">11</option>
+                                    </select>
+                                </div>
+                                <br>
+                                <br> <a class="modallinks2">add to cart <i class="fa fa-shopping-cart" aria-hidden="true"></i></a> </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- endmodal -->
+            <!-- modal -->
+            <div class="modal fade userproduct" id="exampleModal11" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="row">
+                            <div class="col-md-6"> <img src="images/popup/11.jpeg"> </div>
+                            <div class="col-md-6">
+                                <h2>Noisy May Erik Check Shirt</h2>
+                                <h3>$26</h3>
+                                <p class="separator"></p>
+                                <br>
+                                <div class="container">
+                                    <select class="cs-select">
+                                        <option value="" disabled="disabled" selected="selected">Select A Size</option>
+                                        <option value="email">Small</option>
+                                        <option value="twitter">Medium</option>
+                                        <option value="linkedin">Large</option>
+                                        <option value="linkedin">Extra Large (+ $4.00)</option>
+                                    </select>
+                                </div>
+                                <br>
+                                <br> <a class="modallinks2">add to cart <i class="fa fa-shopping-cart" aria-hidden="true"></i></a> </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- endmodal -->
+            <!-- modal -->
+            <div class="modal fade userproduct" id="exampleModal12" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="row">
+                            <div class="col-md-6"> <img src="images/popup/12.jpeg"> </div>
+                            <div class="col-md-6">
+                                <h2>Nike Air Max Thea Trainers In Metallic Teal Blue</h2>
+                                <h3>$95</h3>
+                                <p class="separator"></p>
+                                <br>
+                                <div class="container">
+                                    <select class="cs-select">
+                                        <option value="" disabled="disabled" selected="selected">Select A Size</option>
+                                        <option value="email">7</option>
+                                        <option value="twitter">8</option>
+                                        <option value="linkedin">9</option>
+                                        <option value="linkedin">10)</option>
+                                    </select>
+                                </div>
+                                <br>
+                                <br> <a class="modallinks2">add to cart <i class="fa fa-shopping-cart" aria-hidden="true"></i></a> </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- endmodal -->
+            <br><span class="boxlabel2">Trending Products</span> <span class="pull-right" style="position:relative; padding-right:10px !important;">
+            <a data-slide="prev" href="#media" class="left carousel-control" sty;e="background-color:red !important;">‹</a>
+            <a data-slide="next" href="#media" class="right carousel-control mycontrol">›</a>
+            </span>
+            <p class="separator"></p>
+            <div class="container">
+                <div class='row'>
+                    <div class='col-md-12'>
+                        <div class="carousel slide media-carousel" id="media">
+                            <div class="carousel-inner">
+                                <div class="item  active">
+                                    <div class="row">
+                                        <div class="col-md-3">
+                                            <div class="box two"> <img src="images/popup/1.jpeg">
+                                                <div class="overbox overboxtwo">
+                                                    <center>
+                                                        <div class="title overtext upperpad"> <a class="productbutton" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo"><i class="fa fa-eye" aria-hidden="true"></i></a> <a class="productbutton" data-toggle="modal" data-target="#exampleModal2" data-whatever="@mdo"><i class="fa fa-heart" aria-hidden="true"></i></a> </div>
+                                                    </center>
+                                                </div>
+                                            </div> <span class="boxlabel" style="font-size:8pt;">
+                                    Reclaimed Vintage Inspired Skinny Floral Trousers</span> </div>
+                                        <div class="col-md-3">
+                                            <div class="box two"> <img src="images/popup/2.jpeg">
+                                                <div class="overbox overboxtwo secondbox">
+                                                    <center>
+                                                        <div class="title overtext upperpad"> <a class="productbutton" data-toggle="modal" data-target="#exampleModal1" data-whatever="@mdo"><i class="fa fa-eye" aria-hidden="true"></i></a> <a class="productbutton" data-toggle="modal" data-target="#exampleModal2" data-whatever="@mdo"><i class="fa fa-heart" aria-hidden="true"></i></a> </div>
+                                                    </center>
+                                                </div>
+                                            </div> <span class="boxlabel" style="font-size:8pt;">
+                                    Djinns Moc Lau Hump Trainers In Pink</span> </div>
+                                        <div class="col-md-3">
+                                            <div class="box two"> <img src="images/popup/3.jpeg">
+                                                <div class="overbox overboxtwo thirdbox">
+                                                    <center>
+                                                        <div class="title overtext upperpad"> <a class="productbutton" data-toggle="modal" data-target="#exampleModal3" data-whatever="@mdo"><i class="fa fa-eye" aria-hidden="true"></i></a> <a class="productbutton" data-toggle="modal" data-target="#exampleModal2" data-whatever="@mdo"><i class="fa fa-heart" aria-hidden="true"></i></a> </div>
+                                                    </center>
+                                                </div>
+                                            </div> <span class="boxlabel" style="font-size:8pt;">
+                                    Oversized Wrap Blouse In Dark Rose Print</span> </div>
+                                        <div class="col-md-3">
+                                            <div class="box two"> <img src="images/popup/4.jpeg">
+                                                <div class="overbox overboxtwo fourthbox">
+                                                    <center>
+                                                        <div class="title overtext upperpad"> <a class="productbutton" data-toggle="modal" data-target="#exampleModal4" data-whatever="@mdo"><i class="fa fa-eye" aria-hidden="true"></i></a> <a class="productbutton" data-toggle="modal" data-target="#exampleModal2" data-whatever="@mdo"><i class="fa fa-heart" aria-hidden="true"></i></a> </div>
+                                                    </center>
+                                                </div>
+                                            </div> <span class="boxlabel" style="font-size:8pt;">
+                                    Roll Top Backpack In Colour Block</span> </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="row">
+                                        <div class="col-md-3">
+                                            <div class="box two"> <img src="images/popup/5.jpeg">
+                                                <div class="overbox overboxtwo fifthbox">
+                                                    <center>
+                                                        <div class="title overtext upperpad"> <a class="productbutton" data-toggle="modal" data-target="#exampleModal5" data-whatever="@mdo"><i class="fa fa-eye" aria-hidden="true"></i></a> <a class="productbutton" data-toggle="modal" data-target="#exampleModal2" data-whatever="@mdo"><i class="fa fa-heart" aria-hidden="true"></i></a> </div>
+                                                    </center>
+                                                </div>
+                                            </div> <span class="boxlabel" style="font-size:8pt;">
+                                    Vans Sk8-Hi Trainers
+                                    </span> </div>
+                                        <div class="col-md-3">
+                                            <div class="box two"> <img src="images/popup/6.jpeg">
+                                                <div class="overbox overboxtwo sixthbox">
+                                                    <center>
+                                                        <div class="title overtext upperpad"> <a class="productbutton" data-toggle="modal" data-target="#exampleModal6" data-whatever="@mdo"><i class="fa fa-eye" aria-hidden="true"></i></a> <a class="productbutton" data-toggle="modal" data-target="#exampleModal2" data-whatever="@mdo"><i class="fa fa-heart" aria-hidden="true"></i></a> </div>
+                                                    </center>
+                                                </div>
+                                            </div> <span class="boxlabel" style="font-size:8pt;">
+                                    Monki Dotty Top</span> </div>
+                                        <div class="col-md-3">
+                                            <div class="box two"> <img src="images/popup/7.jpeg">
+                                                <div class="overbox overboxtwo">
+                                                    <center>
+                                                        <div class="title overtext upperpad"> <a class="productbutton" data-toggle="modal" data-target="#exampleModal7" data-whatever="@mdo"><i class="fa fa-eye" aria-hidden="true"></i></a> <a class="productbutton" data-toggle="modal" data-target="#exampleModal2" data-whatever="@mdo"><i class="fa fa-heart" aria-hidden="true"></i></a> </div>
+                                                    </center>
+                                                </div>
+                                            </div> <span class="boxlabel" style="font-size:8pt;">
+                                    Stretch Slim Ankle Grazer Jeans In Light Wash</span> </div>
+                                        <div class="col-md-3">
+                                            <div class="box two"> <img src="images/popup/8.jpeg">
+                                                <div class="overbox overboxtwo secondbox">
+                                                    <center>
+                                                        <div class="title overtext upperpad"> <a class="productbutton" data-toggle="modal" data-target="#exampleModal8" data-whatever="@mdo"><i class="fa fa-eye" aria-hidden="true"></i></a> <a class="productbutton" data-toggle="modal" data-target="#exampleModal2" data-whatever="@mdo"><i class="fa fa-heart" aria-hidden="true"></i></a> </div>
+                                                    </center>
+                                                </div>
+                                            </div> <span class="boxlabel" style="font-size:8pt;">
+                                    Super Oversized T-Shirt With Roll Sleeve...</span> </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="row">
+                                        <div class="col-md-3">
+                                            <div class="box two"> <img src="images/popup/9.jpeg">
+                                                <div class="overbox overboxtwo thirdbox">
+                                                    <center>
+                                                        <div class="title overtext upperpad"> <a class="productbutton" data-toggle="modal" data-target="#exampleModal9" data-whatever="@mdo"><i class="fa fa-eye" aria-hidden="true"></i></a> <a class="productbutton" data-toggle="modal" data-target="#exampleModal2" data-whatever="@mdo"><i class="fa fa-heart" aria-hidden="true"></i></a> </div>
+                                                    </center>
+                                                </div>
+                                            </div> <span class="boxlabel" style="font-size:8pt;">
+                                    Retro Sunglasses In Matt Tort And Gold</span> </div>
+                                        <div class="col-md-3">
+                                            <div class="box two"> <img src="images/popup/10.jpeg">
+                                                <div class="overbox overboxtwo fourthbox">
+                                                    <center>
+                                                        <div class="title overtext upperpad"> <a class="productbutton" data-toggle="modal" data-target="#exampleModal10" data-whatever="@mdo"><i class="fa fa-eye" aria-hidden="true"></i></a> <a class="productbutton" data-toggle="modal" data-target="#exampleModal2" data-whatever="@mdo"><i class="fa fa-heart" aria-hidden="true"></i></a> </div>
+                                                    </center>
+                                                </div>
+                                            </div> <span class="boxlabel" style="font-size:8pt;">
+                                    Originals NMD_XR1 PK Trainers In Black</span> </div>
+                                        <div class="col-md-3">
+                                            <div class="box two"> <img src="images/popup/11.jpeg">
+                                                <div class="overbox overboxtwo fifthbox">
+                                                    <center>
+                                                        <div class="title overtext upperpad"> <a class="productbutton" data-toggle="modal" data-target="#exampleModal11" data-whatever="@mdo"><i class="fa fa-eye" aria-hidden="true"></i></a> <a class="productbutton" data-toggle="modal" data-target="#exampleModal2" data-whatever="@mdo"><i class="fa fa-heart" aria-hidden="true"></i></a> </div>
+                                                    </center>
+                                                </div>
+                                            </div> <span class="boxlabel" style="font-size:8pt;">
+                                    Noisy May Erik Check Shirt
+                                    </span> </div>
+                                        <div class="col-md-3">
+                                            <div class="box two"> <img src="images/popup/12.jpeg">
+                                                <div class="overbox overboxtwo sixthbox">
+                                                    <center>
+                                                        <div class="title overtext upperpad"> <a class="productbutton" data-toggle="modal" data-target="#exampleModal12" data-whatever="@mdo"><i class="fa fa-eye" aria-hidden="true"></i></a> <a class="productbutton" data-toggle="modal" data-target="#exampleModal2" data-whatever="@mdo"><i class="fa fa-heart" aria-hidden="true"></i></a> </div>
+                                                    </center>
+                                                </div>
+                                            </div> <span class="boxlabel" style="font-size:8pt;">
+                                    Nike Air Max Thea Trainers In Metallic Teal Blue</span> </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="springsec">
+                <center>
+                    <h2>spring bling</h2>
+                    <!--                 check out some cool new accessories!-->
+                    <br> <a class="rainbowbutton springblack">watches, glasses, hats &amp; more!</a> </center>
+            </div>
+            <section class="maincntnt">
+                <br><span class="boxlabel2">Latest Articles</span>
+                <p class="separator"></p>
+                <div class="blogsection">
+                    <div class="row">
+                        <div class="col-md-3"> <span class="blogtitle">
+                                Lisa's journey: starting my first fashion company
+                                </span>
+                            <br> <span class="bloglabel">
+                                April 19th 2017 by: <span class="blogauthor">Lisa Callet</span> </span>
+                            <div class="blogimgover"> <img src="images/blog1.jpeg" alt="blog image"> </div> <span class="blogtext">
+                                Like most people, I thought I had a million dollar idea. Mine was starting an eco friendly fashion company...
+                                </span> <span class="continuereading">continue reading</span>
+                            <br>
+                            <br> <span class="blogtitle">
+                                Ramen Noodles
+                                </span>
+                            <br> <span class="bloglabel">
+                                April 2nd 2017 by: <span class="blogauthor">Kevin Slate</span> </span>
+                            <div class="blogimgover"> <img src="images/blog5.jpeg" alt="blog image"> </div> <span class="blogtext">
+                                I come from humble beginnings, so twice a month, I have my ramen days. Those are days where I'd hardly spend a dime....
+                                </span> <span class="continuereading">continue reading</span> </div>
+                        <div class="col-md-3"> <span class="blogtitle">
+                                bad spending
+                                </span>
+                            <br> <span class="bloglabel">
+                                April 10th 2017 by: <span class="blogauthor">Goban J.</span> </span>
+                            <div class="blogimgover"> <img src="images/blog2.jpeg" alt="blog image"> </div> <span class="blogtext">
+                                I used to spend more money on shirts.... SHIRTS (not my wardrobe), than I did on food. I ...
+                                </span> <span class="continuereading">continue reading</span>
+                            <br>
+                            <br> <span class="blogtitle">
+                               Casually cool
+                                </span>
+                            <br> <span class="bloglabel">
+                                March 19th 2017 by: <span class="blogauthor">Freddie Jones</span> </span>
+                            <div class="blogimgover"> <img src="images/blog6.jpeg" alt="blog image"> </div> <span class="blogtext">
+                                A lot of poeple want to be cool. Companies want to be cool. For me, being cool is not being afraid of enjoying the things you lilke...
+                                </span> <span class="continuereading">continue reading</span> </div>
+                        <div class="col-md-3"> <span class="blogtitle">
+                                I turned my paintings into clothing
+                                </span>
+                            <br> <span class="bloglabel">
+                                April 10th 2017 by: <span class="blogauthor">Allison The Rocket</span> </span>
+                            <div class="blogimgover"> <img src="images/blog3.jpeg" alt="blog image"> </div> <span class="blogtext">
+                               I always loved the arts, but painting was my calling. I started painting with a brush when I was three, and I can't remember a day without one....
+                                </span> <span class="continuereading">continue reading</span>
+                            <br>
+                            <br> <span class="blogtitle">
+                                turning a cheatsheet into a playbook
+                                </span>
+                            <br> <span class="bloglabel">
+                                March 14th 2017 by: <span class="blogauthor">Gordon Zo</span> </span>
+                            <div class="blogimgover"> <img src="images/blog7.jpeg" alt="blog image"> </div> <span class="blogtext">
+                              Being a slacker and an under achiever can only get you so far. Once you reach the end, crafty ways of doing half assed things becomes difficult...
+                                </span> <span class="continuereading">continue reading</span> </div>
+                        <div class="col-md-3"> <span class="blogtitle">
+                                the cyclist
+                                </span>
+                            <br> <span class="bloglabel">
+                                April 8th 2017 by: <span class="blogauthor">Barry Whitney</span> </span>
+                            <div class="blogimgover"> <img src="images/blog4.jpeg" alt="blog image"> </div> <span class="blogtext">
+                                Being a cyclist isn't the coolest thing, so I tried to add a little flair to it....
+                                </span> <span class="continuereading">continue reading</span>
+                            <br>
+                            <br> <span class="blogtitle">
+                                My leadership lesson
+                                </span>
+                            <br> <span class="bloglabel">
+                                March 4th 2017 by: <span class="blogauthor">Penelope K.</span> </span>
+                            <div class="blogimgover"> <img src="images/blog8.jpeg" alt="blog image"> </div> <span class="blogtext">
+                                The toughest thing I do everyday? Try to learn something new. Not a grasp, but actual functional knowledge on what my coworkers know....
+                                </span> <span class="continuereading">continue reading</span> </div>
+                    </div>
+                </div>
+                <br>
+                <br>
+                <br>
+                <center><a class="modallinks2" style="padding:15px 25px;">submit a story</a><a class="modallinks2" style="padding:15px 25px;">read more</a></center>
+                <br>
+                <br> </section>
+        </div>
+        <!-- container -->
+        <div class="ourbrands">
+            <div class="container">
+                <div class="col-md-3">
+                    <center> <img src="images/logos/oliberte2.png" alt="Oliberte logo" style="width:%;"></center>
+                    <br>
+                    <center> <img src="images/logos/thupreme.png" alt="Supreme logo" style="width:%;"></center>
+                    <br>
+                    <center> <img src="images/logos/nike.png" alt="Nike logo" style="width:%;"></center>
+                    <br> </div>
+                <div class="col-md-3">
+                    <center> <img src="images/logos/chanel.png" alt="Chanel logo" style="width:60%;"></center>
+                    <br>
+                    <center> <img src="images/logos/bape.png" alt="Bape logo" style="width:80%;"></center>
+                    <br> </div>
+                <div class="col-md-3">
+                    <center> <img src="images/logos/adidas.png" alt="Adidas logo" style="width:70%;"></center>
+                    <br>
+                    <center> <img src="images/logos/puma.png" alt="Puma logo" style="width:%;"></center>
+                    <br>
+                    <br>
+                    <center> <img src="images/logos/vans.png" alt="Vans logo" style="width:80%;"></center>
+                    <br> </div>
+                <div class="col-md-3">
+                    <center> <img src="images/logos/northface.png" alt="North Face logo" style="width:80%;"></center>
+                    <br>
+                    <br>
+                    <center> <img src="images/logos/raf.png" alt="Raf Simons logo" style="width:100%;"></center>
+                    <br>
+                    <br>
+                    <center> <img src="images/logos/newbalance.png" alt="New Balance logo" style="width:100%;"></center>
+                    <br> </div>
+            </div>
+        </div>
+        <div class="footersection">
+            <div class="container">
+                <div class="col-md-4"> <img class="logo" src="images/logo-white.png" alt="logo">
+                    <br>
+                    <br> by: jonathan belok </div>
+                <div class="col-md-4"> images:
+                    <br> oliberte, nike, new balance, chanel, raf simons, the north face, puma, adidas, bape, supreme, vans, unsplash </div>
+                <div class="col-md-4"> rools &amp; resources:
+                    <br> bootstrap, sketch, brackets.io, bootply </div>
+            </div>
+        </div>
+        <script>
+            $(document).ready(function () {
+                $('#media').carousel({
+                    pause: true
+                    , interval: false
+                , });
+            });
+        </script>
+    </section>
+    <script src="modal.js"></script>
+    <script src="dropdown.js"></script>
+    <script src="scroll.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.1.1/js/bootstrap.min.js"></script>
+    <script src="../src/jquery.bootstrap-autohidingnavbar.js"></script>
+    <script>
+        $("div.navbar-fixed-top").autoHidingNavbar();
+    </script>
+</body>
+
+</html>

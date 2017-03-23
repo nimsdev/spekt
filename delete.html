@@ -1,0 +1,133 @@
+
+<!DOCTYPE html><html class=''>
+<head>
+<link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css'><script src='https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js'></script><link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css'>
+<style class="cp-pen-styles">* {
+  box-sizing: border-box;
+}
+
+body, html {
+  font-family: helvetica neue, helvetica, arial, sans-serif;
+  font-weight: 200;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+body p, html p {
+  max-width: 600px;
+  margin: 0 auto 20px auto;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.fancy-select {
+  position: absolute;
+  left: 5000px;
+}
+
+.newSelect {
+  position: relative;
+  display: block;
+  max-width: 300px;
+  margin: 100px auto;
+}
+.newSelect:hover {
+  height: auto;
+}
+.newSelect .selectedOption {
+  background: white;
+  padding: 20px;
+  font-size: 18px;
+  line-height: 18px;
+  height: 58px;
+  border: 1px solid #a9cdcf;
+  color: #a9cdcf;
+  cursor: pointer;
+  position: relative;
+  border-radius: 3px 3px 0 0;
+}
+.newSelect .selectedOption:after {
+  font-family: FontAwesome;
+  content: '\f0dc';
+  position: absolute;
+  right: 20px;
+  color: #a9cdcf;
+}
+.newSelect .selectedOption.selected {
+  color: #134b4e;
+}
+.newSelect .newOptions {
+  position: absolute;
+  width: 100%;
+}
+.newSelect .newOptions .newOption {
+  display: none;
+  top: 0;
+  left: 0;
+  font-size: 18px;
+  line-height: 18px;
+  height: 58px;
+  padding: 20px;
+  background: #08bcc7;
+  color: #134b4e;
+  cursor: pointer;
+}
+.newSelect .newOptions .newOption:hover {
+  background: #baedf0;
+}
+.newSelect.clicked .newOption {
+  display: block;
+}
+.newSelect.closed .newOption {
+  display: none;
+}
+</style></head><body>
+<select name="fancy-select" class="fancy-select">
+  <option value="Option 1">Option 1</option>
+  <option value="Option 2">Option 2</option>
+  <option value="Option 3">Option 3</option>
+  <option value="Option 4">Option 4</option>
+  <option value="Option 5">Option 5</option>
+</select>
+<p>Normcore viral craft beer, Etsy wolf locavore distillery.  Keytar actually gluten-free paleo polaroid occupy, lomo retro pour-over.  Crucifix mlkshk keytar drinking vinegar cray VHS.  Godard Shoreditch dreamcatcher craft beer synth flannel readymade Intelligentsia Tumblr, chambray ethical Marfa shabby chic fingerstache McSweeney's.  Bitters synth direct trade  Austin twee, sriracha Truffaut squid small batch Williamsburg drinking vinegar chambray VHS master cleanse.  Cliche iPhone twee, Kickstarter before they sold out 8-bit Pitchfork cray shabby chic chia banjo YOLO master cleanse craft beer.  Lomo Kickstarter gentrify locavore.</p><p>3 wolf moon vinyl letterpress 90's craft beer artisan drinking vinegar viral.  Pork belly gastropub mixtape pop-up.  PBR&amp;B flexitarian cold-pressed, chillwave raw denim chambray artisan PBR Truffaut fanny pack Wes Anderson crucifix.  Roof party disrupt tofu bitters, stumptown sartorial heirloom meggings authentic.  DIY hella asymmetrical you probably haven't heard of them kogi irony.  Fashion axe cornhole taxidermy vinyl, single-origin coffee swag banh mi.  Organic slow-carb beard Banksy mustache PBR retro mumblecore.</p><p>Ennui keytar swag, YOLO Etsy Portland hella tattooed drinking vinegar vinyl synth forage.  Marfa kitsch viral Pitchfork, Williamsburg messenger bag High Life listicle squid butcher tousled slow-carb.  McSweeney's squid tilde XOXO, forage fanny pack scenester.  Next level forage iPhone Godard Bushwick selvage.  Blue Bottle brunch messenger bag Truffaut synth, +1 migas lomo kale chips salvia meh skateboard crucifix VHS.  Hashtag literally meggings four dollar toast, Marfa lo-fi High Life semiotics chambray Carles.  Helvetica iPhone fixie cred, master cleanse normcore squid.</p><p>Wes Anderson gastropub Kickstarter raw denim, chillwave Helvetica disrupt Schlitz wayfarers lumbersexual blog.  Bicycle rights Bushwick church-key, Odd Future squid locavore PBR&amp;B.  Pickled pug try-hard seitan distillery Blue Bottle.  Neutra plaid Austin, pickled blog gluten-free Echo Park occupy banjo twee church-key gastropub cred.  Letterpress tote bag sriracha, DIY Pinterest selvage photo booth sustainable keffiyeh blog lo-fi semiotics YOLO asymmetrical.  Pour-over Marfa semiotics disrupt.  Bicycle rights salvia semiotics Banksy drinking vinegar Portland retro, narwhal sustainable you probably haven't heard of them.</p>
+<script src='//production-assets.codepen.io/assets/common/stopExecutionOnTimeout-b2a7b3fe212eaa732349046d8416e00a9dec26eb7fd347590fbced3ab38af52e.js'></script><script src='//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+<script>$(document).ready(function(){
+  // Create the new select
+  var select = $('.fancy-select');
+  var selectOption = $('.fancy-select option');
+  select.wrap('<div class="newSelect"></div>');
+  $('.newSelect').prepend('<div class="selectedOption">Choose an Option</div><div class="newOptions"></div>');
+  selectOption.each(function(){
+    var optionContents = $(this).html();
+    var optionValue = $(this).attr('value');
+    $('.newOptions').append('<div class="newOption" data-value="'+optionValue+'">'+optionContents+'</div>')
+  });
+  // new select functionality
+  var newSelect = $('.newSelect');
+  var newOption = $('.newOption');
+  var itemHeight = $('.newOption').height();
+  var itemCount = $('.newOption').length;
+  var optionsHeight = itemHeight * itemCount;
+  newSelect.click(function(){
+    $(this).addClass('clicked');
+  });
+  // update based on selection 
+  newOption.on('mouseup',function(){
+    var newValue = $(this).attr('data-value');
+    $(this).parent().prev('.selectedOption').html(newValue).addClass('selected');
+    // update the actual input
+    selectOption.each(function(){
+      var optionValue = $(this).attr('value');
+      if (newValue == optionValue){
+        $(this).prop('selected',true);
+      } else {
+        $(this).prop('selected',false);
+      }
+    })
+  });
+  newSelect.on('mouseleave',function(){
+    $(this).removeClass('clicked');
+  });
+});
+//# sourceURL=pen.js
+</script>
+</body></html>

@@ -1,0 +1,64 @@
+.myslide {
+    background:#333;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    height: 500px;
+    color: rgba(39, 39, 39, 0.67);
+    font-size: 22pt;
+    font-style: italic;
+    font-weight: thin;
+    letter-spacing: 3px;
+}
+
+img.slideperson {
+    width: 320px;
+    height: 320px;
+}
+
+
+.carousel-control {
+    background: none !important;
+    color: transparent;
+    transition: all .3s ease;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    background-color: transparent !important;
+    box-shadow: none !important;
+    text-shadow: none
+}
+
+.myslide:hover .carousel-control {
+    color: white !important;
+    transition: all .3s ease;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -o-transition: all .3s ease;
+}
+
+li.active {
+    background-color: white !important;
+    color: red;
+    width: 50px !important;
+    height: 1px !important;
+    position: relative;
+    top: 11px !important;
+    border: none !important;
+}
+
+.myslide li {
+    background: rgba(255, 255, 255, 0.33);
+    width: 50px;
+    border-radius: 2px;
+    height: 2px !important;
+    position: relative;
+    top: 2px !important;
+    border: none !important;
+}
+
+.secnext {
+    background: #ebebeb;
+    height: auto;
+    padding-top: 105px;
+    padding-bottom: 105px;
+}
